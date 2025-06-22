@@ -1,0 +1,66 @@
+baseURL = "https://KOTorCAT.github.io/comp_pract/"
+languageCode = "ru-ru"
+title = "Моё  портфолио"
+theme = "ananke"
+
+# Основные настройки
+[params]
+  description = "портфолио"
+  author = "Михаил 149886"
+  dateFormat = "2006-01-02"
+  enableRobotsTXT = true
+  darkMode = true  # Включить темную тему
+  
+  # Цветовая схема
+  mainColor = "#3a86ff"
+  secondaryColor = "#8338ec"
+  backgroundColor = "#f8f9fa"
+  textColor = "#212529"
+
+  # Социальные сети
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/KOTorCAT"
+  [[params.social]]
+    name = "linkedin"
+    url = "#"
+  [[params.social]]
+    name = "twitter"
+    url = "#"
+
+# Настройки меню
+[menu]
+  [[menu.main]]
+    name = "Главная"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Обо мне"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Проекты"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "что то ещё"
+    url = "/posts/"
+    weight = 4
+
+# Оптимизация
+[build]
+  writeStats = true
+  noChmod = true
+  noTimes = true
+
+[imaging]
+  quality = 85
+  anchor = "smart"
+  resampleFilter = "CatmullRom"
+
+[services]
+  [services.googleAnalytics]
+    ID = "UA-XXXXX-X"  # Замените на свой ID
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

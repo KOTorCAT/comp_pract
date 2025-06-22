@@ -1,0 +1,17 @@
+:root {
+  --primary: #3a86ff;
+  --secondary: #8338ec;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 4rem 0;
+  color: white;
+}
+
+.project-card {
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
