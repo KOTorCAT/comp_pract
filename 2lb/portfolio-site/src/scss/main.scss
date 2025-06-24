@@ -1,0 +1,21 @@
+// Импорт Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Твои кастомные стили
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.portfolio-header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    padding: 3rem 0;
+}
+
+.project-card {
+    transition: transform 0.3s;
+    &:hover {
+        transform: translateY(-10px);
+    }
+}

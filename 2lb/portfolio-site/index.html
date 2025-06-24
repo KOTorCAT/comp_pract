@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Михаил Смирнов</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --dark: #2F2E41;
+            --light: #F8F9FA;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-img {
+            height: 200px;
+            background: var(--primary);
+            display: grid;
+            place-items: center;
+            color: white;
+            font-size: 2rem;
+        }
+        .project-content {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Михаил Смирнов</h1>
+        <p>делаю вид, что я разработчик</p>
+    </header>
+
+    <main class="projects">
+        <article class="project-card">
+            <div class="project-img">Проект 1</div>
+            <div class="project-content">
+                <h3> сайт</h3>
+                <p>Сайтик</p>
+                <a href="#">Подробнее →</a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-img">Проект 2</div>
+            <div class="project-content">
+                <h3>другой сайт</h3>
+                <p>полный бараденбур</p>
+                <a href="#">Подробнее →</a>
+            </div>
+        </article>
+    </main>
+</body>
+</html> 
